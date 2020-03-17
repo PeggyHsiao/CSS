@@ -1,0 +1,14 @@
+*{font-family: "Arial", "微軟正黑體";}
+section{ padding: 30px 20px;}
+
+h2{ margin: 0; }
+pre{ background: rgb(243, 243, 243); padding: 20px; line-height: 1.5rem;}
+div{ 
+    width: 200px; 
+    height: 200px; 
+}
+
+div#static{
+    position: absolute;
+    background: rgb(66, 148, 255);
+}

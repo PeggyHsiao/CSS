@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>position</title>
+
+    <link rel="stylesheet" href="position.css">
+</head>
+
+<body>
+    <section>
+        <h2>position: static</h2>
+        <p>預設值。依照瀏覽器預設位置排版，以&ltbody&gt為基準，因此繼承margin: 8px屬性。無法使用top、left、right、bottom、z-index。</p>
+        <pre>
+div#static{
+    position: static;
+    background: rgb(66, 148, 255);
+    width: 200px; 
+    height: 200px;
+}</pre>
+       
+    </section>
+ <div id="static"></div>
+    <hr>
+
+    <section>
+        <h2>position: relative</h2>
+        <p>沒有特別設定top、left、right、bottom，就會同static一樣按照瀏覽器預設配置。</p>
+        <pre>
+div#static{
+    position: static;
+    background: rgb(66, 148, 255);
+    width: 200px; 
+    height: 200px;
+}</pre>
+        <div id="relative"></div>
+    </section>
+    <section>
+        <div id="fixed"></div>
+    </section>
+
+
+
+    <section>
+        <div id="absolute"></div>
+    </section>
+
+
+</body>
+
+</html>
