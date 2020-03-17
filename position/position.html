@@ -14,7 +14,7 @@
 <body>
     <section>
         <h2>position: static</h2>
-        <p>預設值。依照瀏覽器預設位置排版，以&ltbody&gt為基準，因此繼承margin: 8px屬性。無法使用top、left、right、bottom、z-index。</p>
+        <p>預設值。依照瀏覽器預設位置排版。無法使用top、left、right、bottom、z-index。</p>
         <pre>
 div#static{
     position: static;
@@ -22,34 +22,98 @@ div#static{
     width: 200px; 
     height: 200px;
 }</pre>
-       
+        <div id="static"></div>
     </section>
- <div id="static"></div>
+
+    <hr>
+
+    <section>
+        <h2>position: fixed</h2>
+        <p>將元素固定於視窗的絕對位置，不會受到捲動網頁、position其他屬性值影響。</p>
+        <pre>
+div#fixed{
+    position: fixed;
+    background: rgb(129, 87, 62);
+    width: 200px; 
+    height: 200px; 
+    right: 10px;    <span class="mark">/* 固定於網頁右側10px、下方20px處 */</span>
+    bottom: 20px;
+}</pre>
+        <div id="fixed"></div>
+    </section>
+
     <hr>
 
     <section>
         <h2>position: relative</h2>
-        <p>沒有特別設定top、left、right、bottom，就會同static一樣按照瀏覽器預設配置。</p>
+        <p>依照top、left、right、bottom調整原本應顯示位置其相對位置，沒有特別設定同static。</p>
+        <p>滑鼠移入下方紫色方形：淺紫色方形代表原先未設定top、left的位置。</p>
         <pre>
-div#static{
-    position: static;
-    background: rgb(66, 148, 255);
+div#relative{
+    position: relative;
+    background: rgb(94, 66, 255);
     width: 200px; 
     height: 200px;
+    top: 30px;  <span class="mark">/* 較原先未設定位置(淺紫色方塊)上方增加30px、左側增加20px的距離 */</span>
+    left: 20px;  
 }</pre>
-        <div id="relative"></div>
+        <div id="box">
+            <div id="relative"></div>
+            <div id="relative1"></div>
+        </div>
     </section>
+
+    <hr style="margin-top: 40px;">
+
     <section>
-        <div id="fixed"></div>
+        <h2>position: absolute</h2>
+        <p>根據最靠近的父元素設定其絕對位置，如果沒有就會參照&ltbody&gt來定位。</p>
+        <p>以上面的div#relative當作父元素，在父元素中新增&ltdiv id="absolute"&gt&lt/div&gt</p>
+        <pre>
+&ltdiv id="relative">
+    &ltdiv id="absolute">&lt/div>
+&lt/div></pre>
+        <pre>
+div{ 
+    width: 200px; 
+    height: 200px; 
+}
+div#relative{
+    position: relative;
+    background: rgb(94, 66, 255);
+    top: 30px;  <span class="mark">/* 較原先未設定位置(淺紫色方塊)上方增加30px、左側增加20px的距離 */</span>
+    left: 20px;  
+}
+
+div#absolute{
+    position: absolute;
+    background: rgb(62, 129, 103);
+    top: 40px;  <span class="mark">/* 較原父元素(紫色方塊)上方增加40px、左側增加60px的距離 */</span>
+    left: 60px;
+}
+</pre>
+        <div id="relative">
+            <div id="absolute"></div>
+        </div>
+
     </section>
 
 
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 
-    <section>
-        <div id="absolute"></div>
-    </section>
+    <script>
+        $(function () {
+            $("#box").mousemove(function () {
+                $("#relative1").css("display", "block");
+                $("#relative").css("display", "none");
+            });
 
-
+            $("#box").mouseout(function () {
+                $("#relative1").css("display", "none");
+                $("#relative").css("display", "block");
+            });
+        });
+    </script>
 </body>
 
 </html>

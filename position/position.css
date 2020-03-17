@@ -1,14 +1,39 @@
 *{font-family: "Arial", "微軟正黑體";}
+body{  padding-bottom: 100px; }
 section{ padding: 30px 20px;}
-
+span.mark{ font-size: .95rem; color: rgb(15, 138, 35); }
 h2{ margin: 0; }
 pre{ background: rgb(243, 243, 243); padding: 20px; line-height: 1.5rem;}
 div{ 
     width: 200px; 
     height: 200px; 
 }
-
 div#static{
-    position: absolute;
+    position: static;
     background: rgb(66, 148, 255);
 }
+div#relative{
+    position: relative;
+    background: rgb(78, 64, 158);
+    top: 30px;
+    left: 20px;
+}
+div#relative1{
+    position: relative;
+    background: rgba(78, 64, 158, 0.5);
+    display: none;
+}
+div#absolute{
+    position: absolute;
+    background: rgb(62, 129, 103);
+    top: 40px;
+    left: 60px;
+}
+div#fixed{
+    position: fixed;
+    background: rgb(129, 87, 62);
+    right: 10px;
+    bottom: 20px;
+}
+
+
