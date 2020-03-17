@@ -6,17 +6,11 @@
     <title>position</title>
     <style>
         div{ width: 300px; height: 300px; }
-        div#A{ position: relative; top: 0; left: 0; width: 500px; height: 500px; background: gray;}
-        div#a{ background: blue; position: relative; bottom: 30px; right: 10px;}
-        div#b{ background: green; position: absolute; top: 50px; left: 50px;}
-        div#C{ position: relative; top: 0; left: 0; width: 500px; height: 500px; background: rgb(146, 60, 60);}
-
+        div#A{ position: absolute; top: 0; left: 0; width: 500px; height: 500px; background: gray;}
+        div#a{ background: blue; position: fixed; bottom: 0; right: 0;}
     </style>
 </head>
 <body>
     <div id="A"><div id="a"></div></div>
-    <!--<div id="b"></div>-->
-    <div id="C"><div id="a"></div></div>
-    
 </body>
 </html>
