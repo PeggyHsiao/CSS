@@ -66,7 +66,8 @@ ultra-expanded  | 寬 200%
   .ultra-expanded { font-stretch: ultra-expanded; }
 ```
 這時候打開瀏覽器會看到這樣的結果。
-![Result](https://github.com/PeggyHsiao/CSS-Notes/blob/master/font-stretch/result.JPG)
+<img src='https://github.com/PeggyHsiao/CSS-Notes/blob/master/font-stretch/result.JPG' style='align:left'/>  
+
 
 如果不想侷限屬性值規定的縮放大小，也可以自訂百分比。
 ```html
