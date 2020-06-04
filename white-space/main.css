@@ -1,0 +1,12 @@
+div { 
+    border: 1px solid rgba(0,0,0,.1);
+    width: 300px; 
+}
+
+div#nowrap > p{ white-space: nowrap; }
+
+div#pre > p{ white-space: pre; }
+
+div#pre-wrap > p{ white-space: pre-wrap; }
+
+div#pre-line > p{ white-space: pre-line; }
