@@ -1,4 +1,4 @@
-# text-indent屬性  
+# text-indent  
 段落首字縮排。
 
 ## 屬性值
