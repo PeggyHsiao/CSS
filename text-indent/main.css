@@ -1,0 +1,4 @@
+p#indentA{ text-indent: 10px; }
+p#indentB{ text-indent: 10%; }
+p#indentC{ text-indent: -30px; }
+p#indentD{ text-indent: -1rem; }
