@@ -28,5 +28,6 @@ p#indentB{ text-indent: 10%; }
 p#indentC{ text-indent: -30px; }
 p#indentD{ text-indent: -1rem; }
 ```
-結果如下圖，第三行被截斷是因為**負值的效果等於凸排**。
+結果如下圖，第三行被截斷是因為**負值的效果等於凸排**。  
+
 ![Result](https://github.com/PeggyHsiao/CSS-Notes/blob/master/text-indent/result.JPG)
