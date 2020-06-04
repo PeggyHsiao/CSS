@@ -1,0 +1,26 @@
+@font-face {
+    src: url('LeagueMonoVariable.ttf');
+    font-family: 'LeagueMonoVariable';
+    font-stretch: 50% 200%; /* Required by Chrome */
+  }
+  
+  .container {
+    font-family:'LeagueMonoVariable';
+    font-size: 2rem;
+  }
+  
+  .ultra-condensed{ font-stretch: ultra-condensed; }
+  .extra-condensed{ font-stretch: extra-condensed; }
+  .condensed{ font-stretch: condensed; }
+  .semi-condensed{ font-stretch: semi-condensed }
+  
+  .normal { font-stretch: normal; }
+  
+  .semi-expanded{ font-stretch: semi-expanded }
+  .expanded{ font-stretch: expanded; }
+  .extra-expanded{ font-stretch: extra-expanded; }
+  .ultra-expanded{ font-stretch: ultra-expanded; }
+
+
+  .custom-narrow{ font-stretch: 60%; }
+  .custom-wider{ font-stretch: 130%; }
