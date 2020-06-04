@@ -16,16 +16,22 @@
 
 <p>這一段沒有縮排</p>
 <p id="indentA">這一段縮排10px</p>
+
 <p id="indentB">這一段縮排10%</p>
+
 <p id="indentC">這一段縮排-30px</p>
+
 <p id="indentD">這一段縮排-1rem</p>
 ```
 ```css
 /* main.css */
 
 p#indentA{ text-indent: 10px; }
+
 p#indentB{ text-indent: 10%; }
+
 p#indentC{ text-indent: -30px; }
+
 p#indentD{ text-indent: -1rem; }
 ```
 結果如下圖，第三行被截斷是因為**負值的效果等於凸排**。  
